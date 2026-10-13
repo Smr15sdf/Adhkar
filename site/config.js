@@ -16,17 +16,13 @@ const SITE_CONFIG = {
   repo: "https://github.com/Smr15sdf/Adhkar",
   // Approximate sizes measured 2026-10-13 (may change after rebuild):
   portable: {
-    file: "Adhkar.exe",
-    kind: "portable", // runs directly, no install
-    size: "≈ 48 MB",
-    url: "" // e.g. "https://github.com/OWNER/REPO/releases/download/v1.0/Adhkar.exe"
-  },
-  setup: {
-    file: "Adhkar_Setup.exe",
-    kind: "setup", // installer (Inno Setup)
-    size: "≈ 49 MB",
-    url: "" // e.g. "https://github.com/OWNER/REPO/releases/download/v1.0/Adhkar_Setup.exe"
-  },
+  ...
+  url: "https://github.com/Smr15sdf/Adhkar/releases/download/v1.0/Adhkar.exe"
+},
+setup: {
+  ...
+  url: "https://github.com/Smr15sdf/Adhkar/releases/download/v1.0/Adhkar_Setup.exe"
+},
   // Optional links (leave empty to hide the button):
   releasesPage: "https://github.com/Smr15sdf/Adhkar/releases",
   sourceCode: "https://github.com/Smr15sdf/Adhkar",
