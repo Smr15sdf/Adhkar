@@ -1,106 +1,108 @@
+<div dir="rtl">
+
 <div align="center">
 
-<img src="docs/social_preview.png" alt="Adhkar - adhkar and prayer times in a glass capsule" width="100%">
+<img src="docs/social_preview.png" alt="أذكار - الأذكار ومواقيت الصلاة بكبسولة زجاجية" width="100%">
 
-# Adhkar | أذكار
+# أذكار | Adhkar
 
-**A Windows desktop app that shows short authentic adhkar and your prayer times in an iOS-style glass capsule notification.**
+**تطبيق لسطح مكتب ويندوز يعرض لك أذكاراً قصيرة صحيحة ومواقيت الصلاة في إشعار كبسولة زجاجية بنمط iOS.**
 
 [![tests](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
 
-[العربية](README.ar.md) · English
+العربية · [English](README.en.md)
 
 </div>
 
 ---
 
-## Why
+## الفكرة
 
-It's easy to forget the adhkar and the time of the next prayer while working on the computer. Adhkar sits quietly in the system tray and, at an interval you choose, slides a small frosted-glass capsule down from the top of the screen with a short dhikr, then lets it disappear. It never takes focus away from what you're doing.
+ننسى الأذكار ووقت الصلاة القادمة كثيراً ونحن نعمل على الجهاز. التطبيق يعمل بهدوء في الخلفية، وكل فترة تحددها تنزل من أعلى الشاشة كبسولة زجاجية صغيرة فيها ذكر قصير ثم تختفي، ولا تسحب التركيز من النافذة التي تعمل عليها.
 
-## Features
+## المميزات
 
-### Adhkar
-- **Glass capsule notification:** frameless rounded pill with a blurred backdrop, slides down from the top-center and back up. It does not steal keyboard focus.
-- **You control the timing:** interval between notifications (1–1440 minutes) and how long each stays (2–120 seconds).
-- **Click to dismiss**, or turn it off and clicks pass straight through to the window behind.
-- **Your own adhkar:** add and delete, import a `.txt` file (one dhikr per line; UTF-8, UTF-16 and Windows-1256 are supported, duplicates are skipped), or drag and drop the file onto the window.
-- **Built-in starter set:** nine short adhkar from the Qur'an and the Sunnah, with references below.
-- **Separate font sizes** for the interface and for the notification.
+### الأذكار
+- **إشعار كبسولة زجاجية:** بدون إطار وبخلفية ضبابية، تنزل من منتصف أعلى الشاشة وتصعد بحركة سلسة، ولا تأخذ التركيز.
+- **تتحكم بالوقت:** الفاصل بين الإشعارات (من 1 إلى 1440 دقيقة) ومدة بقاء الإشعار (من 2 إلى 120 ثانية).
+- **الإغلاق بالنقر**، أو عطّله فتمرّ نقراتك إلى النافذة التي خلفه.
+- **أذكارك أنت:** أضف واحذف، أو استورد ملف `.txt` كل سطر فيه ذكر (UTF-8 وUTF-16 وWindows-1256، ويُتجاهل المكرر)، أو اسحب الملف وأفلته على النافذة.
+- **أذكار جاهزة:** تسعة أذكار قصيرة من القرآن والسنة ومراجعها أدناه.
+- **حجم خط منفصل** للواجهة وللإشعار.
 
-### Prayer times (new)
-- **Computed locally, offline:** the five prayers are calculated on your machine from your coordinates (seven calculation methods, standard or Hanafi Asr, manual ±60 minute adjustment per prayer).
-- **Three capsule modes**, switchable without restarting:
-  1. *Dhikr only:* hover the capsule to see the next prayer and the time left.
-  2. *Dhikr with time:* the countdown under the dhikr.
-  3. *Side by side:* dhikr on one side, prayer name and countdown on the other.
-- **Display formats:** 24-hour or 12-hour clock (3:29 PM style with ص/م), and the remaining time **with seconds (2:20:31)** or **in minutes (2:20)**.
-- **Prayer cycle:** a notice before the adhan (5 minutes by default), a notice at the adhan, then a **per-prayer iqama countdown**, then the next prayer. Notices are never repeated, survive restarts, and anything that came due while the app was closed or the PC was asleep is skipped instead of showing a pile of old notices.
-- **Optional adhan sound:** you pick your own file (WAV, MP3 or WMA). Off by default.
-- **Accurate location:**
-  - *Automatic* uses the **Windows Location Service** (Wi-Fi/GPS) and shows the accuracy. If it isn't available, an internet-based estimate is offered as an approximation and never silently replaces a saved location.
-  - *Manual:* search for your city, or enter exact coordinates.
-- **Tabs UI:** *Adhkar* and *Prayer times & alerts*, with a live strip of today's times and the next prayer highlighted.
-- **Number fields and drop-downs ignore the mouse wheel**, so scrolling the page never changes a value by accident.
-- **Runs in the background:** closing the window minimizes to the system tray (its tooltip shows the next prayer). Optional start with Windows.
+### مواقيت الصلاة (جديد)
+- **تُحسب محلياً بدون إنترنت:** الصلوات الخمس تُحسب على جهازك من إحداثياتك (سبع طرق حساب، وعصر جمهور أو حنفي، وتعديل يدوي حتى ±60 دقيقة لكل صلاة).
+- **ثلاثة أوضاع للكبسولة** تتبدل بدون إعادة تشغيل:
+  1. *الذكر فقط:* مرّر الماوس فتظهر الصلاة القادمة والوقت المتبقي.
+  2. *الذكر مع الوقت:* العدّاد تحت الذكر.
+  3. *بجانب بعضهما:* الذكر في جهة، واسم الصلاة والعدّاد في الجهة الأخرى.
+- **صيغ العرض:** ساعة 24 أو 12 (بصيغة 3:29 م)، والوقت المتبقي **بالثواني (2:20:31)** أو **بالدقائق (2:20)**.
+- **دورة الصلاة:** تنبيه قبل الأذان (5 دقائق افتراضياً)، وإشعار عند الأذان، ثم **عدّاد إقامة بمدة مستقلة لكل صلاة**، ثم الصلاة التالية. لا تتكرر الإشعارات، وتبقى حالتها بعد إعادة التشغيل، وما حلّ موعده أثناء إغلاق التطبيق أو السكون يُتجاوز بدل أن تظهر إشعارات قديمة دفعة واحدة.
+- **صوت أذان اختياري:** تختار ملفك بنفسك (WAV أو MP3 أو WMA)، ومعطّل افتراضياً.
+- **موقع أدق:**
+  - *التلقائي* يعتمد على **خدمة الموقع في ويندوز** (Wi-Fi/GPS) ويعرض الدقة. وإن لم تتوفر يُعرض تقدير تقريبي من الإنترنت، ولا يستبدل موقعاً محفوظاً بصمت.
+  - *اليدوي:* ابحث عن مدينتك أو أدخل الإحداثيات بدقة.
+- **تبويبان:** «الأذكار» و«مواقيت الصلاة والتنبيهات»، مع شريط حي بأوقات اليوم والصلاة القادمة مظللة.
+- **الخانات الرقمية والقوائم المنسدلة لا تتأثر بعجلة الماوس،** فلا تتغير قيمة بالخطأ عند تمرير الصفحة.
+- **يعمل في الخلفية:** إغلاق النافذة يخفيها في الـ Tray (وتعرض أيقونته الصلاة القادمة). وخيار التشغيل مع ويندوز.
 
-## Screenshots
+## لقطات الشاشة
 
-<!-- Replace these design renders with real screenshots of your build before publishing. -->
+
 
 <p align="center">
-  <img src="docs/capsule_modes.png" alt="The three capsule modes" width="100%">
+  <img src="docs/capsule_modes.png" alt="أوضاع الكبسولة الثلاثة" width="100%">
 </p>
 <p align="center">
-  <img src="docs/settings_preview.png" alt="Adhkar tab" width="48%">
-  <img src="docs/prayer_tab_preview.png" alt="Prayer times tab" width="48%">
+  <img src="docs/settings_preview.png" alt="تبويب الأذكار" width="48%">
+  <img src="docs/prayer_tab_preview.png" alt="تبويب مواقيت الصلاة" width="48%">
 </p>
 
-## Download
+## التحميل
 
-Get the latest installer (`Adhkar_Setup.exe`) from the [Releases](../../releases) page.
+حمّل أحدث مثبّت (`Adhkar_Setup.exe`) من صفحة [Releases](../../releases).
 
-> The installer and executable are not code-signed, so Windows SmartScreen may show a warning. Choose **More info → Run anyway**.
+> الملف غير موقّع رقمياً، فقد يعرض ويندوز تحذير SmartScreen. اختر **More info ثم Run anyway**.
 
-## Run from source
+## التشغيل من الكود
 
-Requirements: Windows and Python 3.10+ (developed and tested with 3.12).
+المتطلبات: ويندوز وPython 3.10 أو أحدث (طُوّر واختُبر على 3.12).
 
 ```bash
 pip install -r requirements.txt
 python adhkar_app.py
 ```
 
-### Font
+### الخط
 
-The interface uses the Thmanyah font. The font file is not included in this repository: put the `.otf`/`.ttf` file in `fonts/` and the app loads it automatically. Without it the app falls back to Segoe UI. Please check the font's license before redistributing it.
+تستخدم الواجهة خط ثمانية. ملف الخط غير مرفق في المستودع: ضع ملف `.otf` أو `.ttf` في مجلد `fonts/` وسيحمّله التطبيق تلقائياً، وبدونه يستخدم Segoe UI. راجع ترخيص الخط قبل إعادة توزيعه.
 
-## Build
+## البناء
 
 ```bash
-build.bat              # builds dist\Adhkar.exe (PyInstaller)
-build_installer.bat    # builds the exe, then installer_output\Adhkar_Setup.exe (Inno Setup 6)
+build.bat              # يبني dist\Adhkar.exe (PyInstaller)
+build_installer.bat    # يبني الملف التنفيذي ثم installer_output\Adhkar_Setup.exe (Inno Setup 6)
 ```
 
-`build_installer.bat` can install Inno Setup for you through `winget` if it isn't found. The build bundles `tzdata` so time zones work in the packaged exe.
+يستطيع `build_installer.bat` تثبيت Inno Setup عبر `winget` إذا لم يجده. ويضمّن البناء حزمة `tzdata` لتعمل المناطق الزمنية داخل الـ exe.
 
-## Tests
+## الاختبارات
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-169 unit tests cover the calculation (checked against published timetables), the countdown and iqama cycle, notification de-duplication, sleep/clock-change handling, location parsing, display formats, config persistence and the UI logic (with fake widgets, no GUI needed). The actual rendering, animation, mouse hover and sound are verified by hand: see [docs/TESTING_WINDOWS.md](docs/TESTING_WINDOWS.md).
+169 اختباراً تغطي الحساب (قورن بجداول منشورة)، والعدّاد ودورة الإقامة، ومنع تكرار الإشعارات، والسكون وتغيير الساعة، وتحليل الموقع، وصيغ العرض، وحفظ الإعدادات، ومنطق الواجهة (بأدوات مزيّفة ودون واجهة رسومية). أما الرسم والحركة وتمرير الماوس والصوت فتُتحقق منها يدوياً: انظر [docs/TESTING_WINDOWS.md](docs/TESTING_WINDOWS.md).
 
-To watch a full prayer cycle without waiting, run the app with a fake clock and an isolated data folder:
+لمشاهدة دورة صلاة كاملة بدون انتظار، شغّل التطبيق بساعة وهمية ومجلد بيانات معزول:
 
 ```bat
 test_mode.bat 2026-10-11T15:23:00+03:00
 ```
 
-## Importing adhkar from a text file
+## استيراد الأذكار من ملف نصي
 
-One dhikr per line:
+ضع في كل سطر ذكراً واحداً:
 
 ```text
 سُبْحَانَ اللَّهِ وَبِحَمْدِهِ
@@ -108,59 +110,47 @@ One dhikr per line:
 اللَّهُ أَكْبَرُ
 ```
 
-Click **Import adhkar from a text file** (or drop the file on the window) and press **Save**. A sample is in [`sample/adhkar_sample.txt`](sample/adhkar_sample.txt).
+ثم اضغط «استيراد أذكار من ملف نصي» (أو أفلت الملف على النافذة) واضغط «حفظ التغييرات». يوجد مثال في [`sample/adhkar_sample.txt`](sample/adhkar_sample.txt).
 
-## Data and privacy
+## البيانات والخصوصية
 
-Settings are stored in `%APPDATA%\Adhkar\data.json` and notification state in `prayer_state.json` next to it. Prayer times are computed locally. Network access happens **only** when you ask for it (automatic location or city search) and uses these services:
+تُحفظ الإعدادات في `%APPDATA%\Adhkar\data.json` وحالة الإشعارات في `prayer_state.json` بجانبه. المواقيت تُحسب محلياً. ولا يتصل التطبيق بالإنترنت **إلا عندما تطلب ذلك** (الموقع التلقائي أو البحث عن مدينة) وبهذه الخدمات:
 
-| Purpose | Service |
+| الغرض | الخدمة |
 |---|---|
-| Automatic location | Windows Location Service (Microsoft); `ipwho.is` / `ipapi.co` as an approximate fallback |
-| City search and time zone | [Open-Meteo](https://open-meteo.com) |
-| City name from coordinates | [OpenStreetMap Nominatim](https://nominatim.org) |
+| الموقع التلقائي | خدمة الموقع في ويندوز (مايكروسوفت)، و`ipwho.is` / `ipapi.co` كحل احتياطي تقريبي |
+| البحث عن المدن والمنطقة الزمنية | [Open-Meteo](https://open-meteo.com) |
+| اسم المدينة من الإحداثيات | [OpenStreetMap Nominatim](https://nominatim.org) |
 
-## Built-in adhkar and references
+## الأذكار الجاهزة ومراجعها
 
-| Dhikr | Reference |
+| الذكر | المرجع |
 |---|---|
-| سبحان الله وبحمده، سبحان الله العظيم | Bukhari 6406, Muslim 2694 |
-| لا حول ولا قوة إلا بالله | Bukhari 6409, Muslim 2704 |
-| سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر | Muslim 2137 |
-| اللهم صل وسلم على نبينا محمد | Muslim 408 (virtue of sending blessings upon the Prophet) |
-| رضيت بالله ربا، وبالإسلام دينا، وبمحمد رسولا | Abu Dawud 1529, Muslim 1884 |
-| سبحان الله وبحمده، أستغفر الله وأتوب إليه | Muslim 484 |
-| أستغفر الله وأتوب إليه | Bukhari 6307 |
-| لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير | Bukhari 3293, Muslim 2691 |
-| حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم | Qur'an 9:129 |
+| سبحان الله وبحمده، سبحان الله العظيم | البخاري 6406، مسلم 2694 |
+| لا حول ولا قوة إلا بالله | البخاري 6409، مسلم 2704 |
+| سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر | مسلم 2137 |
+| اللهم صل وسلم على نبينا محمد | مسلم 408 (فضل الصلاة على النبي ﷺ) |
+| رضيت بالله ربا، وبالإسلام دينا، وبمحمد رسولا | أبو داود 1529، مسلم 1884 |
+| سبحان الله وبحمده، أستغفر الله وأتوب إليه | مسلم 484 |
+| أستغفر الله وأتوب إليه | البخاري 6307 |
+| لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير | البخاري 3293، مسلم 2691 |
+| حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم | التوبة: 129 |
 
-References are provided for convenience; please verify them against trusted hadith sources.
+المراجع للتسهيل فقط، فيُرجى التأكد منها في مصادر الحديث الموثوقة.
 
-## Notes on prayer times
+## ملاحظات على مواقيت الصلاة
 
-- The astronomical formulas follow the well-known [PrayTimes.org](http://praytimes.org) method, re-implemented in Python.
-- Times can differ by a minute or two from your local mosque's timetable; use the per-prayer adjustment to match it.
-- Umm al-Qura adds 30 minutes to Isha in Ramadan. This is not applied automatically: set the Isha adjustment to +30 during Ramadan.
-- The default iqama durations are approximate and editable, not official iqama times.
+- المعادلات الفلكية تتبع طريقة [PrayTimes.org](http://praytimes.org) المعروفة، مُعاد كتابتها بلغة Python.
+- قد يختلف الوقت دقيقة أو دقيقتين عن تقويم مسجدك المحلي؛ استخدم تعديل كل صلاة للمطابقة.
+- يضيف تقويم أم القرى 30 دقيقة للعشاء في رمضان، وهذا لا يُطبَّق تلقائياً: اجعل تعديل العشاء +30 خلال رمضان.
+- مدد الإقامة الافتراضية تقريبية وقابلة للتعديل، وليست مواقيت إقامة رسمية.
 
-## Tech stack
+## التقنيات
 
 Python · PySide6 (Qt for Python) · PyInstaller · Inno Setup · `unittest`
 
-## Project structure
-
-```text
-adhkar_app.py          UI: tabs, capsule notification, tray, settings
-prayer_times.py        Qt-free logic: calculation, engine, iqama, notices, location
-tests/                 unit tests (no GUI required)
-build.bat              build the executable
-build_installer.bat    build the executable and the installer
-adhkar_setup.iss       Inno Setup script
-test_mode.bat          run with a fake clock and isolated data
-assets/ sample/ docs/  icon, sample text file, images and guides
-fonts/                 put the Thmanyah font here
-```
-
-## License
+## الترخيص
 
 [MIT](LICENSE)
+
+</div>
