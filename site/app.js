@@ -158,7 +158,7 @@
     });
     // version label + download buttons state (keep static "1" unless config provides one)
     const cfg = window.SITE_CONFIG || {};
-    if (cfg.version) document.querySelectorAll("[data-ver]").forEach(function (el) { el.textContent = cfg.version; });
+    if (cfg.version) document.querySelectorAll("[data-version]").forEach(function (el) { el.textContent = cfg.version; });
     setupDownloads();
     try { localStorage.setItem("adhkar-lang", lang); } catch (e) {}
   }
