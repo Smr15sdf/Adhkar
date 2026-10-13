@@ -8,7 +8,7 @@
 
 **تطبيق لسطح مكتب ويندوز يعرض لك أذكاراً قصيرة صحيحة ومواقيت الصلاة في إشعار كبسولة زجاجية بنمط iOS.**
 
-[![tests](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
+
 
 العربية · [English](README.en.md)
 
