@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أذكار | Adhkar — أذكارك ومواقيت صلاتك على سطح مكتبك</title>
+<meta name="description" content="تطبيق ويندوز مجاني يعرض الأذكار الصحيحة ومواقيت الصلاة في كبسولة زجاجية هادئة على سطح المكتب.">
+<meta property="og:title" content="أذكار | Adhkar">
+<meta property="og:description" content="أذكارك ومواقيت صلاتك، بهدوء على سطح مكتبك. تطبيق ويندوز مجاني ومفتوح المصدر.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/social_preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/icon-128.png">
+<link rel="apple-touch-icon" href="assets/icon-128.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script>
+/* set theme before paint to avoid flash */
+try {
+  var s = localStorage.getItem("adhkar-theme");
+  if (s === "dark" || (!s && matchMedia("(prefers-color-scheme: dark)").matches)) {
+    document.documentElement.dataset.theme = "dark";
+  }
+} catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="wrap header-inner nav-holder">
+    <a class="brand" href="#top" aria-label="Adhkar">
+      <img src="assets/icon-128.png" alt="Adhkar icon" width="36" height="36">
+      <span>أذكار <small>Adhkar · <span data-i18n="brandSub">لويندوز</span></small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">القائمة</button>
+    <nav class="nav" id="mainNav" aria-label="main">
+      <a href="#features" data-i18n="navFeatures">المميزات</a>
+      <a href="#how" data-i18n="navHow">كيف يعمل</a>
+      <a href="#shots" data-i18n="navShots">المعاينة</a>
+      <a href="#demo" data-i18n="navDemo">فيديو</a>
+      <a href="#download" data-i18n="navDl">التحميل</a>
+      <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn theme-btn" id="themeBtn" data-i18n-aria="themeLabel" aria-label="الوضع الليلي">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="lang-btn" id="langBtn" aria-label="language">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div class="reveal">
+      <span class="badge"><span class="dot"></span><span data-i18n="winBadge">تطبيق سطح مكتب لويندوز</span></span>
+      <h1><span data-i18n="heroTitleA">أذكارك ومواقيت صلاتك،</span><br><span class="accent" data-i18n="heroTitleB">بهدوء على سطح مكتبك</span></h1>
+      <p class="lead" data-i18n="heroLead">تطبيق ويندوز خفيف يجلس في شريط النظام، ويعرض لك ذكرًا قصيرًا من الكتاب والسنة في كبسولة زجاجية لا تسحب التركيز، مع عدّاد الصلاة القادمة وتنبيهات الأذان والإقامة — كل ذلك يُحسب على جهازك.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" id="heroDlBtn" href="#download"><span data-i18n="dlPrimary">تحميل التطبيق لويندوز</span></a>
+        <a class="btn btn-ghost" href="#features"><span data-i18n="explore">اكتشف المميزات</span></a>
+      </div>
+      <p class="hero-note"><span data-i18n="heroNote">مجاني ومفتوح المصدر (MIT) · يعمل دون حساب · الإصدار </span><span data-ver>1.0</span></p>
+    </div>
+    </div>
+  <div class="hero-full reveal">
+    <figure>
+      <img src="assets/social_preview.png" alt="أذكار Adhkar: الكبسولة الزجاجية ونافذة مواقيت الصلاة" width="1280" height="640" fetchpriority="high">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="block wrap" id="features">
+  <div class="section-head reveal">
+    <h2 data-i18n="featTitle">مصمم للذكر دون إزعاج</h2>
+    <p data-i18n="featSub">كل ميزة أدناه موجودة فعلًا في التطبيق وتم التحقق منها في الكود.</p>
+  </div>
+  <div class="feat-grid">
+    <div class="feat reveal"><div class="icon">◍</div><h3 data-i18n="f1t">كبسولة عائمة زجاجية</h3><p data-i18n="f1d">إشعار دائري شفاف ينزل من أعلى الشاشة ثم يختفي، ولا يسرق تركيزك أبدًا.</p></div>
+    <div class="feat reveal"><div class="icon">◫</div><h3 data-i18n="f2t">ثلاثة أوضاع للعرض</h3><p data-i18n="f2d">ذكر فقط مع الظهور عند التمرير، أو الذكر مع العدّاد تحته، أو جنبًا إلى جنب.</p></div>
+    <div class="feat reveal"><div class="icon">☾</div><h3 data-i18n="f3t">مواقيت الصلاة دون إنترنت</h3><p data-i18n="f3d">حساب محلي من إحداثياتك بسبع طرق حساب وخيار عصر حنفي وتعديل لكل صلاة.</p></div>
+    <div class="feat reveal"><div class="icon">◷</div><h3 data-i18n="f4t">تنبيه وإقامة</h3><p data-i18n="f4d">إشعار قبل الأذان وعنده، ثم عدّاد إقامة مستقل لكل صلاة دون تكرار.</p></div>
+    <div class="feat reveal"><div class="icon">⏱</div><h3 data-i18n="f5t">تحكم كامل بالتوقيت</h3><p data-i18n="f5d">فاصل بين الأذكار من دقيقة إلى يوم كامل، ومدة بقاء من ثانيتين إلى دقيقتين.</p></div>
+    <div class="feat reveal"><div class="icon">✎</div><h3 data-i18n="f6t">أذكارك الخاصة</h3><p data-i18n="f6d">أضف واحذف واستورد من ملف نصي أو بالسحب والإفلات، مع تجاهل المكرر.</p></div>
+    <div class="feat reveal"><div class="icon">◐</div><h3 data-i18n="f7t">تخصيص المظهر</h3><p data-i18n="f7d">حجم خط مستقل للواجهة والإشعار، وإغلاق بالنقر أو تمرير النقرات للخلف.</p></div>
+    <div class="feat reveal"><div class="icon">◎</div><h3 data-i18n="f8t">موقع تلقائي أو يدوي</h3><p data-i18n="f8d">اكتشاف عبر خدمة موقع ويندوز مع عرض الدقة، أو بحث عن مدينتك وإحداثيات دقيقة.</p></div>
+    <div class="feat reveal"><div class="icon">▣</div><h3 data-i18n="f9t">يعمل في الخلفية</h3><p data-i18n="f9d">يستقر في شريط النظام مع عرض الصلاة القادمة، وخيار التشغيل مع بدء ويندوز.</p></div>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section class="block wrap" id="how">
+  <div class="section-head reveal">
+    <h2 data-i18n="howTitle">كيف يعمل؟</h2>
+    <p data-i18n="howSub">ثلاث خطوات فقط، دون حسابات أو تعقيد.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><div class="num">1</div><h3 data-i18n="s1t">حمّل وثبّت على ويندوز</h3><p data-i18n="s1d">اختر النسخة المحمولة أو المثبّت من قسم التحميل وشغّلها.</p></div>
+    <div class="step reveal"><div class="num">2</div><h3 data-i18n="s2t">اضبط موقعك وتفضيلاتك</h3><p data-i18n="s2d">حدد مدينتك أو إحداثياتك، واختر طريقة الحساب وأوقات الظهور.</p></div>
+    <div class="step reveal"><div class="num">3</div><h3 data-i18n="s3t">استمتع بالذكر والمواقيت</h3><p data-i18n="s3d">تابع الأذكار والعدّاد التنازلي للصلاة القادمة حسب إعداداتك.</p></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="block wrap" id="shots">
+  <div class="section-head reveal">
+    <h2 data-i18n="shotsTitle">معاينة التطبيق</h2>
+    <p data-i18n="shotsSub">لقطات حقيقية من التطبيق أثناء العمل. انقر أي صورة لعرضها بحجم أكبر.</p>
+  </div>
+  <div class="gallery" id="realShots">
+    <button class="shot reveal" type="button">
+      <img src="screenshots/settings-tab.webp" alt="تبويب الأذكار في التطبيق" loading="lazy" width="1600" height="1067">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="r4">تبويب الأذكار: قائمتك، الفاصل الزمني، وأحجام الخط</span></figcaption>
+    </button>
+    <button class="shot reveal" type="button">
+      <img src="screenshots/capsule-adhan.webp" alt="إشعار دخول وقت الأذان" loading="lazy" width="1600" height="1067">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="r1">إشعار دخول وقت الأذان على سطح المكتب</span></figcaption>
+    </button>
+    <button class="shot reveal" type="button">
+      <img src="screenshots/capsule-stacked.webp" alt="الذكر مع الوقت المتبقي للصلاة" loading="lazy" width="1600" height="1067">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="r2">وضع الذكر مع الوقت المتبقي للصلاة القادمة</span></figcaption>
+    </button>
+    <button class="shot reveal" type="button">
+      <img src="screenshots/capsule-side.webp" alt="الذكر والوقت بجانب بعضهما" loading="lazy" width="1600" height="1067">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="r3">وضع الذكر والوقت بجانب بعضهما</span></figcaption>
+    </button>
+  </div>
+</section>
+
+<!-- ============ DEMO VIDEO ============ -->
+<section class="block wrap" id="demo">
+  <div class="section-head reveal">
+    <h2 data-i18n="demoTitle">شاهد التطبيق يعمل</h2>
+    <p data-i18n="demoSub">تسجيل حقيقي للكبسولة على سطح مكتب ويندوز.</p>
+  </div>
+  <figure class="demo-frame reveal">
+    <video controls preload="none" poster="assets/demo-poster.jpg" playsinline>
+      <source src="assets/demo.mp4" type="video/mp4">
+    </video>
+  </figure>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="block wrap" id="download">
+  <div class="dl-card reveal">
+    <div>
+      <h2 data-i18n="dlTitle">حمّل أذكار لويندوز</h2>
+      <p data-i18n="dlLead">اختر النسخة المناسبة لك. الملفان غير موقّعين رقميًا، فقد يعرض ويندوز تحذير SmartScreen — حمّل دائمًا من المصدر الرسمي فقط.</p>
+      <div class="dl-meta">
+        <span><span data-i18n="dlMetaVer">الإصدار</span> <span data-ver>1.0</span></span>
+        <span data-i18n="dlMetaWin">ويندوز 10 / 11</span>
+        <span>MIT</span>
+      </div>
+      <p class="dl-note" id="dlSoon" data-i18n="dlSoon">رابط التحميل لم يُنشر بعد — سيتوفر مع أول إصدار على GitHub Releases.</p>
+      <p class="dl-note" data-i18n="smartscreen">عند ظهور تحذير SmartScreen لا تتجاوزه إلا إذا حمّلت الملف من المصدر الرسمي وتأكدت من سلامته.</p>
+      <div class="link-row">
+        <a id="releasesLink" href="#" data-i18n="releases">صفحة الإصدارات</a>
+        <a id="sourceLink" href="#" data-i18n="source">الكود المصدري</a>
+      </div>
+    </div>
+    <div class="dl-actions">
+      <a class="btn btn-primary" id="dlPortableBtn" href="#download"><span data-i18n="dlPortable">النسخة المحمولة (تشغيل مباشر)</span><span data-size></span></a>
+      <a class="btn btn-soft" id="dlSetupBtn" href="#download"><span data-i18n="dlSetup">المثبّت (تثبيت تقليدي)</span><span data-size></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block wrap" id="faq">
+  <div class="section-head reveal">
+    <h2 data-i18n="faqTitle">الأسئلة الشائعة</h2>
+    <p data-i18n="faqSub">إجابات عن المؤكد فقط — ما لم نتأكد منه تركْناه قابلًا للتعديل.</p>
+  </div>
+  <div class="faq">
+    <details class="faq-item reveal"><summary><span data-i18n="q1">هل التطبيق مجاني؟</span></summary><div class="answer" data-i18n="a1">نعم، مجاني تمامًا ومرخّص بترخيص MIT، ولا يحتاج حسابًا أو اشتراكًا.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q2">ما نظام التشغيل المدعوم؟</span></summary><div class="answer" data-i18n="a2">ويندوز 10 و11 (طُوّر واختُبر على ويندوز مع بايثون 3.12). لا توجد نسخة للجوال أو الماك.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q3">كيف أثبّت التطبيق؟</span></summary><div class="answer" data-i18n="a3">حمّل نسخة المثبّت Adhkar_Setup.exe وشغّلها واتبع المعالج، أو شغّل النسخة المحمولة Adhkar.exe مباشرة دون تثبيت.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q4">هل يحتاج إلى الإنترنت؟</span></summary><div class="answer" data-i18n="a4">لا. المواقيت تُحسب محليًا على جهازك. الإنترنت يُستخدم فقط عندما تطلب ذلك: تحديد الموقع التلقائي أو البحث عن مدينة.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q5">كيف أغيّر المدينة؟</span></summary><div class="answer" data-i18n="a5">من تبويب «مواقيت الصلاة والتنبيهات»: اختر الوضع اليدوي ثم ابحث عن مدينتك أو أدخل خط العرض وخط الطول واضغط اعتماد.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q6">ماذا أفعل مع تحذير SmartScreen؟</span></summary><div class="answer" data-i18n="a6">الملف غير موقّع رقميًا لذلك قد يعرض ويندوز تحذيرًا. حمّل البرنامج من المصدر الرسمي فقط، وتأكد من اسم الملف وحجمه قبل التشغيل، ولا تتجاوز التحذير لملفات من مصادر مجهولة.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q7">أين أجد التحديثات؟</span></summary><div class="answer" data-i18n="a7">من صفحة GitHub Releases الرسمية للمشروع — ستجد هناك أحدث إصدار وملاحظاته.</div></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/icon-128.png" alt="Adhkar icon" width="30" height="30">
+        <span>أذكار Adhkar</span>
+      </div>
+      <nav class="foot-links" aria-label="footer">
+        <a href="#features" data-i18n="navFeatures">المميزات</a>
+        <a href="#shots" data-i18n="navShots">المعاينة</a>
+      <a href="#demo" data-i18n="navDemo">فيديو</a>
+        <a href="#demo" data-i18n="navDemo">فيديو</a>
+        <a href="#download" data-i18n="navDl">التحميل</a>
+        <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
+      </nav>
+    </div>
+    <div class="foot-base">
+      <span data-i18n="footTag">أذكار قصيرة ومواقيت دقيقة، بهدوء.</span>
+      <span>v<span data-ver>1.0</span> · MIT</span>
+      <span>© <span id="year">2026</span> <span data-i18n="rights">سامر شفيع. مرخّص بـ MIT.</span></span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button id="lightboxClose" data-i18n="close">إغلاق ✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
