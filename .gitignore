@@ -1,0 +1,14 @@
+build/
+dist/
+installer_output/
+*.spec
+__pycache__/
+*.pyc
+# fonts are not redistributed in the repo (check the font license first)
+fonts/*.otf
+fonts/*.ttf
+fonts/*.woff
+fonts/*.woff2
+.vscode/
+.idea/
+Thumbs.db
