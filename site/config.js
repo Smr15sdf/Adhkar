@@ -12,7 +12,7 @@
  *     instead of a broken link — never a fake download.
  * ============================================================ */
 const SITE_CONFIG = {
-  version: "1.0",
+  version: "1",
   repo: "https://github.com/Smr15sdf/Adhkar",
   // Approximate sizes measured 2026-10-13 (may change after rebuild):
   portable: {

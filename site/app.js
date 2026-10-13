@@ -179,12 +179,11 @@
         btn.onclick = function (ev) { ev.preventDefault(); notify(t("toastDl")); };
       }
     });
-    // hero button mirrors portable, falls back to setup, else notice
+    // hero button always scrolls to the download section (details + choice)
     const hero = document.getElementById("heroDlBtn");
     if (hero) {
-      const url = (cfg.portable && cfg.portable.url) || (cfg.setup && cfg.setup.url) || "";
-      if (url) { hero.setAttribute("href", url); hero.onclick = null; }
-      else { hero.setAttribute("href", "#download"); hero.onclick = function (ev) { ev.preventDefault(); notify(t("toastDl")); }; }
+      hero.setAttribute("href", "#download");
+      hero.onclick = null;
     }
     // optional links: hide when empty
     [["releasesLink", cfg.releasesPage], ["sourceLink", cfg.sourceCode]].forEach(function ([id, url]) {
