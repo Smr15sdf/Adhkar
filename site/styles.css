@@ -189,6 +189,7 @@ section.block { padding-block: 44px; }
   display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center;
 }
 @media (max-width: 800px) { .dl-card { grid-template-columns: 1fr; } }
+.dl-card + .dl-card { margin-top: 24px; }
 .dl-card h2 { margin: 0 0 8px; }
 .dl-card p { color: #b9cdc3; margin: 0 0 6px; }
 .dl-meta {

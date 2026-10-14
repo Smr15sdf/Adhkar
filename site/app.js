@@ -5,18 +5,20 @@
   const STR = {
     ar: {
       dir: "rtl", locale: "ar",
-      metaTitle: "أذكار | Adhkar — أذكارك ومواقيت صلاتك على سطح مكتبك",
-      metaDesc: "تطبيق ويندوز مجاني يعرض الأذكار الصحيحة ومواقيت الصلاة في كبسولة زجاجية هادئة على سطح المكتب.",
+      metaTitle: "أذكار | Adhkar — أذكارك ومواقيت صلاتك على ويندوز وأندرويد",
+      metaDesc: "تطبيق مجاني يعرض الأذكار الصحيحة ومواقيت الصلاة في كبسولة زجاجية هادئة — نسخة لويندوز ونسخة لأندرويد.",
       skip: "تخطَّ إلى المحتوى",
-      brandSub: "لويندوز",
+      brandSub: "لويندوز وأندرويد",
       navFeatures: "المميزات", navHow: "كيف يعمل", navShots: "المعاينة",
       navDl: "التحميل", navFaq: "الأسئلة الشائعة", navDemo: "فيديو",
+      navAnd: "أندرويد",
       langBtn: "EN", menu: "القائمة", themeLabel: "التبديل بين الوضع الفاتح والليلي",
-      winBadge: "تطبيق سطح مكتب لويندوز",
+      winBadge: "تطبيق ويندوز وأندرويد",
       heroTitleA: "أذكارك ومواقيت صلاتك،",
-      heroTitleB: "بهدوء على سطح مكتبك",
-      heroLead: "تطبيق ويندوز خفيف يجلس في شريط النظام، ويعرض لك ذكرًا قصيرًا من الكتاب والسنة في كبسولة زجاجية لا تسحب التركيز، مع عدّاد الصلاة القادمة وتنبيهات الأذان والإقامة — كل ذلك يُحسب على جهازك.",
+      heroTitleB: "بهدوء على أجهزتك",
+      heroLead: "تطبيقان خفيفان — لويندوز يجلس في شريط النظام، ولأندرويد بكبسولة عائمة فوق تطبيقاتك — يعرضان لك ذكرًا قصيرًا من الكتاب والسنة في كبسولة زجاجية لا تسحب التركيز، مع عدّاد الصلاة القادمة وتنبيهات الأذان والإقامة — كل ذلك يُحسب على جهازك.",
       dlPrimary: "تحميل التطبيق لويندوز",
+      dlAndroid: "نسخة أندرويد (APK)",
       explore: "اكتشف المميزات",
       heroNote: "مجاني ومفتوح المصدر (MIT) · يعمل دون حساب · الإصدار ",
       
@@ -33,7 +35,7 @@
       f9t: "يعمل في الخلفية", f9d: "يستقر في شريط النظام مع عرض الصلاة القادمة، وخيار التشغيل مع بدء ويندوز.",
       howTitle: "كيف يعمل؟",
       howSub: "ثلاث خطوات فقط، دون حسابات أو تعقيد.",
-      s1t: "حمّل وثبّت على ويندوز", s1d: "اختر النسخة المحمولة أو المثبّت من قسم التحميل وشغّلها.",
+      s1t: "حمّل نسختك", s1d: "اختر نسخة ويندوز (محمولة أو مثبّت) أو نسخة أندرويد (APK) من قسم التحميل.",
       s2t: "اضبط موقعك وتفضيلاتك", s2d: "حدد مدينتك أو إحداثياتك، واختر طريقة الحساب وأوقات الظهور.",
       s3t: "استمتع بالذكر والمواقيت", s3d: "تابع الأذكار والعدّاد التنازلي للصلاة القادمة حسب إعداداتك.",
       shotsTitle: "معاينة التطبيق",
@@ -43,6 +45,10 @@
       r2: "وضع الذكر مع الوقت المتبقي للصلاة القادمة",
       r3: "وضع الذكر والوقت بجانب بعضهما",
       r4: "تبويب الأذكار: قائمتك، الفاصل الزمني، وأحجام الخط",
+      andShotsTitle: "معاينة نسخة أندرويد",
+      andShotsSub: "الكبسولة العائمة فوق شاشة جوال Honor — لقطات حقيقية من الجهاز. انقر أي صورة للتكبير.",
+      aShot1: "الكبسولة أعلى الشاشة الرئيسية — وضع الذكر فقط",
+      aShot2: "وضع الذكر مع العدّاد المتبقي لصلاة الفجر",
       demoTitle: "شاهد التطبيق يعمل",
       demoSub: "تسجيل حقيقي للكبسولة على سطح مكتب ويندوز.",
       close: "إغلاق ✕",
@@ -50,38 +56,45 @@
       dlLead: "اختر النسخة المناسبة لك. الملفان غير موقّعين رقميًا، فقد يعرض ويندوز تحذير SmartScreen — حمّل دائمًا من المصدر الرسمي فقط.",
       dlPortable: "النسخة المحمولة (تشغيل مباشر)",
       dlSetup: "المثبّت (تثبيت تقليدي)",
-      dlSoon: "رابط التحميل لم يُنشر بعد — سيتوفر مع أول إصدار على GitHub Releases.",
+      dlAndroidTitle: "حمّل أذكار لأندرويد",
+      dlAndroidLead: "تطبيق أندرويد أصلي بنفس الكبسولة الزجاجية والمواقيت المحسوبة دون إنترنت — مع دعم العربية والإنجليزية والوضع الليلي.",
+      dlApk: "تطبيق أندرويد (APK)",
+      dlMetaAndroid: "أندرويد 8 فأعلى",
+      dlUnknown: "ملف APK: فعّل «التثبيت من مصادر غير معروفة» عند التثبيت، وامنح صلاحية «العرض فوق التطبيقات» عند تفعيل الكبسولة.",
       dlMetaVer: "الإصدار", dlMetaWin: "ويندوز 10 / 11",
       releases: "صفحة الإصدارات", source: "الكود المصدري",
       smartscreen: "عند ظهور تحذير SmartScreen لا تتجاوزه إلا إذا حمّلت الملف من المصدر الرسمي وتأكدت من سلامته.",
       faqTitle: "الأسئلة الشائعة",
       faqSub: "إجابات عن المؤكد فقط — ما لم نتأكد منه تركْناه قابلًا للتعديل.",
       q1: "هل التطبيق مجاني؟", a1: "نعم، مجاني تمامًا ومرخّص بترخيص MIT، ولا يحتاج حسابًا أو اشتراكًا.",
-      q2: "ما نظام التشغيل المدعوم؟", a2: "ويندوز 10 و11 (طُوّر واختُبر على ويندوز مع بايثون 3.12). لا توجد نسخة للجوال أو الماك.",
-      q3: "كيف أثبّت التطبيق؟", a3: "حمّل نسخة المثبّت Adhkar_Setup.exe وشغّلها واتبع المعالج، أو شغّل النسخة المحمولة Adhkar.exe مباشرة دون تثبيت.",
+      q2: "ما الأنظمة المدعومة؟", a2: "ويندوز 10 و11، وأندرويد 8 فأعلى. لا توجد نسخة للماك أو الآيفون.",
+      q3: "كيف أثبّت نسخة ويندوز؟", a3: "حمّل نسخة المثبّت Adhkar_Setup.exe وشغّلها واتبع المعالج، أو شغّل النسخة المحمولة Adhkar.exe مباشرة دون تثبيت.",
       q4: "هل يحتاج إلى الإنترنت؟", a4: "لا. المواقيت تُحسب محليًا على جهازك. الإنترنت يُستخدم فقط عندما تطلب ذلك: تحديد الموقع التلقائي أو البحث عن مدينة.",
       q5: "كيف أغيّر المدينة؟", a5: "من تبويب «مواقيت الصلاة والتنبيهات»: اختر الوضع اليدوي ثم ابحث عن مدينتك أو أدخل خط العرض وخط الطول واضغط اعتماد.",
       q6: "ماذا أفعل مع تحذير SmartScreen؟", a6: "الملف غير موقّع رقميًا لذلك قد يعرض ويندوز تحذيرًا. حمّل البرنامج من المصدر الرسمي فقط، وتأكد من اسم الملف وحجمه قبل التشغيل، ولا تتجاوز التحذير لملفات من مصادر مجهولة.",
       q7: "أين أجد التحديثات؟", a7: "من صفحة GitHub Releases الرسمية للمشروع — ستجد هناك أحدث إصدار وملاحظاته.",
+      q8: "كيف أثبّت نسخة أندرويد وأُبقي الكبسولة تعمل؟", a8: "حمّل ملف APK وثبّته (اسمح بالتثبيت من مصادر غير معروفة)، ثم امنح صلاحية «العرض فوق التطبيقات» عند تفعيل الكبسولة. وعلى أجهزة Honor وهواوي اسمح للتطبيق بالعمل في الخلفية من الإعدادات، وإلا قتل النظام الكبسولة خارج التطبيق.",
       footTag: "أذكار قصيرة ومواقيت دقيقة، بهدوء.",
-      footNav: "الأقسام", footDl: "التحميل", rights: "سامر شفيع. مرخّص بـ MIT.",
+      footNav: "الأقسام", footDl: "التحميل", rights: "سامر سعيد شفيع. مرخّص بـ MIT.",
       notFound: "لم يتم العثور على الصفحة",
       toastDl: "رابط التحميل سيُضاف هنا بعد نشر أول إصدار على GitHub Releases."
     },
     en: {
       dir: "ltr", locale: "en",
-      metaTitle: "Adhkar — Your adhkar and prayer times, quietly on your desktop",
-      metaDesc: "A free Windows app showing authentic adhkar and prayer times in a calm glass capsule on your desktop.",
+      metaTitle: "Adhkar — Your adhkar and prayer times, quietly on Windows & Android",
+      metaDesc: "A free app showing authentic adhkar and prayer times in a calm glass capsule — a Windows build and an Android build.",
       skip: "Skip to content",
-      brandSub: "for Windows",
+      brandSub: "for Windows & Android",
       navFeatures: "Features", navHow: "How it works", navShots: "Preview",
       navDl: "Download", navFaq: "FAQ", navDemo: "Video",
+      navAnd: "Android",
       langBtn: "عربي", menu: "Menu", themeLabel: "Toggle light and dark mode",
-      winBadge: "Windows desktop app",
+      winBadge: "Windows & Android app",
       heroTitleA: "Your adhkar and prayer times,",
-      heroTitleB: "quietly on your desktop",
-      heroLead: "A lightweight Windows app living in the system tray. It shows a short authentic dhikr in a glass capsule that never steals focus, with a next-prayer countdown plus adhan and iqama notices — all computed on your machine.",
+      heroTitleB: "quietly on your devices",
+      heroLead: "Two lightweight apps — one for Windows living in the system tray, one for Android with a capsule floating above your apps — showing a short authentic dhikr in a glass capsule that never steals focus, with a next-prayer countdown plus adhan and iqama notices — all computed on your machine.",
       dlPrimary: "Download for Windows",
+      dlAndroid: "Android build (APK)",
       explore: "Explore features",
       heroNote: "Free and open source (MIT) · no account needed · version ",
       
@@ -98,7 +111,7 @@
       f9t: "Runs in the background", f9d: "Lives in the system tray showing the next prayer, with optional start-with-Windows.",
       howTitle: "How does it work?",
       howSub: "Three steps only — no accounts, no fuss.",
-      s1t: "Download & install on Windows", s1d: "Pick the portable build or the installer from the download section and run it.",
+      s1t: "Download your build", s1d: "Pick the Windows build (portable or installer) or the Android build (APK) from the download section.",
       s2t: "Set your location & prefs", s2d: "Choose your city or coordinates, calculation method and display timings.",
       s3t: "Enjoy adhkar & prayer times", s3d: "Follow the adhkar and the next-prayer countdown per your settings.",
       shotsTitle: "App preview",
@@ -108,6 +121,10 @@
       r2: "Dhikr with the countdown of the next prayer",
       r3: "Side-by-side dhikr and time mode",
       r4: "The Adhkar tab: your list, the interval and the font sizes",
+      andShotsTitle: "Android build preview",
+      andShotsSub: "The floating capsule over an Honor home screen — real shots from the device. Click any image to enlarge.",
+      aShot1: "The capsule at the top of the home screen — dhikr-only mode",
+      aShot2: "Dhikr with the remaining Fajr countdown mode",
       demoTitle: "See the app in action",
       demoSub: "A real recording of the capsule on a Windows desktop.",
       close: "Close ✕",
@@ -115,21 +132,26 @@
       dlLead: "Pick the build that suits you. Both files are unsigned, so Windows SmartScreen may warn — always download from the official source only.",
       dlPortable: "Portable (runs directly)",
       dlSetup: "Installer (classic setup)",
-      dlSoon: "Download link not published yet — it will appear with the first GitHub Release.",
+      dlAndroidTitle: "Download Adhkar for Android",
+      dlAndroidLead: "A native Android app with the same glass capsule and offline-computed prayer times — with Arabic & English support and dark mode.",
+      dlApk: "Android app (APK)",
+      dlMetaAndroid: "Android 8 and up",
+      dlUnknown: "APK file: allow “install from unknown sources” when installing, and grant the “display over other apps” permission when enabling the capsule.",
       dlMetaVer: "Version", dlMetaWin: "Windows 10 / 11",
       releases: "Releases page", source: "Source code",
       smartscreen: "If SmartScreen warns, proceed only when you downloaded the file from the official source and verified its name and size.",
       faqTitle: "FAQ",
       faqSub: "Answers cover verified matters only — anything unconfirmed was left editable.",
       q1: "Is the app free?", a1: "Yes — completely free under the MIT license, with no account or subscription.",
-      q2: "Which OS is supported?", a2: "Windows 10 and 11 (developed and tested on Windows with Python 3.12). No mobile or Mac version.",
-      q3: "How do I install it?", a3: "Download Adhkar_Setup.exe, run it and follow the wizard — or run the portable Adhkar.exe directly with no install.",
+      q2: "Which systems are supported?", a2: "Windows 10 and 11, and Android 8 and up. No Mac or iPhone version.",
+      q3: "How do I install the Windows build?", a3: "Download Adhkar_Setup.exe, run it and follow the wizard — or run the portable Adhkar.exe directly with no install.",
       q4: "Does it need the internet?", a4: "No. Prayer times are computed locally on your machine. Network is used only when you ask: auto location or city search.",
       q5: "How do I change the city?", a5: "In the “Prayer times & alerts” tab: switch to manual mode, search for your city or enter latitude/longitude and apply.",
       q6: "What about the SmartScreen warning?", a6: "The file is not code-signed so Windows may warn. Download only from the official source, check the file name and size before running, and never bypass the warning for files from unknown sources.",
       q7: "Where do I find updates?", a7: "On the project's official GitHub Releases page — the latest version and its notes live there.",
+      q8: "How do I install the Android build and keep the capsule alive?", a8: "Download the APK and install it (allow unknown sources), then grant the “display over other apps” permission when enabling the capsule. On Honor and Huawei devices, allow the app to run in the background from Settings, or the system will kill the capsule outside the app.",
       footTag: "Short adhkar and accurate times, quietly.",
-      footNav: "Sections", footDl: "Download", rights: "Samer Shafi. Licensed under MIT.",
+      footNav: "Sections", footDl: "Download", rights: "Samer Saeed Shafie. Licensed under MIT.",
       notFound: "Page not found",
       toastDl: "The download link will be added here after the first GitHub Release is published."
     }
@@ -165,7 +187,7 @@
 
   function setupDownloads() {
     const cfg = window.SITE_CONFIG || {};
-    [["dlPortableBtn", cfg.portable], ["dlSetupBtn", cfg.setup]].forEach(function ([id, item]) {
+    [["dlPortableBtn", cfg.portable], ["dlSetupBtn", cfg.setup], ["dlApkBtn", cfg.android]].forEach(function ([id, item]) {
       const btn = document.getElementById(id);
       if (!btn || !item) return;
       const sizeEl = btn.querySelector("[data-size]");
@@ -185,6 +207,12 @@
       hero.setAttribute("href", "#download");
       hero.onclick = null;
     }
+    // hero Android button: always scrolls to the download section below
+    const heroApk = document.getElementById("heroApkBtn");
+    if (heroApk) {
+      heroApk.setAttribute("href", "#download");
+      heroApk.onclick = null;
+    }
     // optional links: hide when empty
     [["releasesLink", cfg.releasesPage], ["sourceLink", cfg.sourceCode]].forEach(function ([id, url]) {
       const a = document.getElementById(id);
@@ -192,12 +220,6 @@
       if (url) { a.style.display = ""; a.setAttribute("href", url); }
       else { a.style.display = "none"; }
     });
-    // download-soon notice visibility
-    const soon = document.getElementById("dlSoon");
-    if (soon) {
-      const any = (cfg.portable && cfg.portable.url) || (cfg.setup && cfg.setup.url);
-      soon.style.display = any ? "none" : "";
-    }
   }
 
   let toastTimer = null;

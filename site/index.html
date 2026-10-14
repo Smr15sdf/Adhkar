@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أذكار | Adhkar — أذكارك ومواقيت صلاتك على سطح مكتبك</title>
-<meta name="description" content="تطبيق ويندوز مجاني يعرض الأذكار الصحيحة ومواقيت الصلاة في كبسولة زجاجية هادئة على سطح المكتب.">
+<title>أذكار | Adhkar — أذكارك ومواقيت صلاتك على ويندوز وأندرويد</title>
+<meta name="description" content="تطبيق مجاني يعرض الأذكار الصحيحة ومواقيت الصلاة في كبسولة زجاجية هادئة — نسخة لويندوز ونسخة لأندرويد.">
 <meta property="og:title" content="أذكار | Adhkar">
-<meta property="og:description" content="أذكارك ومواقيت صلاتك، بهدوء على سطح مكتبك. تطبيق ويندوز مجاني ومفتوح المصدر.">
+<meta property="og:description" content="أذكارك ومواقيت صلاتك، بهدوء على أجهزتك. تطبيق مجاني ومفتوح المصدر لويندوز وأندرويد.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/social_preview.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,13 +33,14 @@ try {
   <div class="wrap header-inner nav-holder">
     <a class="brand" href="#top" aria-label="Adhkar">
       <img src="assets/icon-128.png" alt="Adhkar icon" width="36" height="36">
-      <span>أذكار <small>Adhkar · <span data-i18n="brandSub">لويندوز</span></small></span>
+      <span>أذكار <small>Adhkar · <span data-i18n="brandSub">لويندوز وأندرويد</span></small></span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">القائمة</button>
     <nav class="nav" id="mainNav" aria-label="main">
       <a href="#features" data-i18n="navFeatures">المميزات</a>
       <a href="#how" data-i18n="navHow">كيف يعمل</a>
       <a href="#shots" data-i18n="navShots">المعاينة</a>
+      <a href="#androidShots" data-i18n="navAnd">أندرويد</a>
       <a href="#demo" data-i18n="navDemo">فيديو</a>
       <a href="#download" data-i18n="navDl">التحميل</a>
       <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
@@ -59,11 +60,12 @@ try {
 <section class="hero wrap" id="top">
   <div class="hero-grid">
     <div class="reveal">
-      <span class="badge"><span class="dot"></span><span data-i18n="winBadge">تطبيق سطح مكتب لويندوز</span></span>
-      <h1><span data-i18n="heroTitleA">أذكارك ومواقيت صلاتك،</span><br><span class="accent" data-i18n="heroTitleB">بهدوء على سطح مكتبك</span></h1>
-      <p class="lead" data-i18n="heroLead">تطبيق ويندوز خفيف يجلس في شريط النظام، ويعرض لك ذكرًا قصيرًا من الكتاب والسنة في كبسولة زجاجية لا تسحب التركيز، مع عدّاد الصلاة القادمة وتنبيهات الأذان والإقامة — كل ذلك يُحسب على جهازك.</p>
+      <span class="badge"><span class="dot"></span><span data-i18n="winBadge">تطبيق ويندوز وأندرويد</span></span>
+      <h1><span data-i18n="heroTitleA">أذكارك ومواقيت صلاتك،</span><br><span class="accent" data-i18n="heroTitleB">بهدوء على أجهزتك</span></h1>
+      <p class="lead" data-i18n="heroLead">تطبيقان خفيفان — لويندوز يجلس في شريط النظام، ولأندرويد بكبسولة عائمة فوق تطبيقاتك — يعرضان لك ذكرًا قصيرًا من الكتاب والسنة في كبسولة زجاجية لا تسحب التركيز، مع عدّاد الصلاة القادمة وتنبيهات الأذان والإقامة — كل ذلك يُحسب على جهازك.</p>
       <div class="cta-row">
         <a class="btn btn-primary" id="heroDlBtn" href="#download"><span data-i18n="dlPrimary">تحميل التطبيق لويندوز</span></a>
+        <a class="btn btn-primary" id="heroApkBtn" href="#download"><span data-i18n="dlAndroid">نسخة أندرويد (APK)</span></a>
         <a class="btn btn-ghost" href="#features"><span data-i18n="explore">اكتشف المميزات</span></a>
       </div>
       <p class="hero-note"><span data-i18n="heroNote">مجاني ومفتوح المصدر (MIT) · يعمل دون حساب · الإصدار </span><span data-version>1</span></p>
@@ -102,7 +104,7 @@ try {
     <p data-i18n="howSub">ثلاث خطوات فقط، دون حسابات أو تعقيد.</p>
   </div>
   <div class="steps">
-    <div class="step reveal"><div class="num">1</div><h3 data-i18n="s1t">حمّل وثبّت على ويندوز</h3><p data-i18n="s1d">اختر النسخة المحمولة أو المثبّت من قسم التحميل وشغّلها.</p></div>
+    <div class="step reveal"><div class="num">1</div><h3 data-i18n="s1t">حمّل نسختك</h3><p data-i18n="s1d">اختر نسخة ويندوز (محمولة أو مثبّت) أو نسخة أندرويد (APK) من قسم التحميل.</p></div>
     <div class="step reveal"><div class="num">2</div><h3 data-i18n="s2t">اضبط موقعك وتفضيلاتك</h3><p data-i18n="s2d">حدد مدينتك أو إحداثياتك، واختر طريقة الحساب وأوقات الظهور.</p></div>
     <div class="step reveal"><div class="num">3</div><h3 data-i18n="s3t">استمتع بالذكر والمواقيت</h3><p data-i18n="s3d">تابع الأذكار والعدّاد التنازلي للصلاة القادمة حسب إعداداتك.</p></div>
   </div>
@@ -130,6 +132,24 @@ try {
     <button class="shot reveal" type="button">
       <img src="screenshots/capsule-side.webp" alt="الذكر والوقت بجانب بعضهما" loading="lazy" width="1600" height="1067">
       <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="r3">وضع الذكر والوقت بجانب بعضهما</span></figcaption>
+    </button>
+  </div>
+</section>
+
+<!-- ============ ANDROID PREVIEW ============ -->
+<section class="block wrap" id="androidShots">
+  <div class="section-head reveal">
+    <h2 data-i18n="andShotsTitle">معاينة نسخة أندرويد</h2>
+    <p data-i18n="andShotsSub">الكبسولة العائمة فوق شاشة جوال Honor — لقطات حقيقية من الجهاز. انقر أي صورة للتكبير.</p>
+  </div>
+  <div class="gallery">
+    <button class="shot reveal" type="button">
+      <img src="screenshots/android-capsule-1.webp" alt="real capsule on Honor home screen - dhikr only" loading="lazy" width="1920" height="3000">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="aShot1">الكبسولة أعلى الشاشة الرئيسية — وضع الذكر فقط</span></figcaption>
+    </button>
+    <button class="shot reveal" type="button">
+      <img src="screenshots/android-capsule-2.webp" alt="real capsule on Honor home screen - dhikr with Fajr countdown" loading="lazy" width="1920" height="3000">
+      <figcaption><span class="tag" data-i18n="realTag">لقطة حقيقية</span><span data-i18n="aShot2">وضع الذكر مع العدّاد المتبقي لصلاة الفجر</span></figcaption>
     </button>
   </div>
 </section>
@@ -169,6 +189,21 @@ try {
       <a class="btn btn-soft" id="dlSetupBtn" href="https://github.com/Smr15sdf/Adhkar/releases/download/v1.0/Adhkar_Setup.exe"><span data-i18n="dlSetup">المثبّت (تثبيت تقليدي)</span><span data-size></span></a>
     </div>
   </div>
+  <div class="dl-card reveal">
+    <div>
+      <h2 data-i18n="dlAndroidTitle">حمّل أذكار لأندرويد</h2>
+      <p data-i18n="dlAndroidLead">تطبيق أندرويد أصلي بنفس الكبسولة الزجاجية والمواقيت المحسوبة دون إنترنت — مع دعم العربية والإنجليزية والوضع الليلي.</p>
+      <div class="dl-meta">
+        <span><span data-i18n="dlMetaVer">الإصدار</span> <span data-version>1</span></span>
+        <span data-i18n="dlMetaAndroid">أندرويد 8 فأعلى</span>
+        <span>MIT</span>
+      </div>
+      <p class="dl-note" data-i18n="dlUnknown">ملف APK: فعّل «التثبيت من مصادر غير معروفة» عند التثبيت، وامنح صلاحية «العرض فوق التطبيقات» عند تفعيل الكبسولة.</p>
+    </div>
+    <div class="dl-actions">
+      <a class="btn btn-primary" id="dlApkBtn" href="#download"><span data-i18n="dlApk">تطبيق أندرويد (APK)</span><span data-size></span></a>
+    </div>
+  </div>
 </section>
 
 <!-- ============ FAQ ============ -->
@@ -179,12 +214,13 @@ try {
   </div>
   <div class="faq">
     <details class="faq-item reveal"><summary><span data-i18n="q1">هل التطبيق مجاني؟</span></summary><div class="answer" data-i18n="a1">نعم، مجاني تمامًا ومرخّص بترخيص MIT، ولا يحتاج حسابًا أو اشتراكًا.</div></details>
-    <details class="faq-item reveal"><summary><span data-i18n="q2">ما نظام التشغيل المدعوم؟</span></summary><div class="answer" data-i18n="a2">ويندوز 10 و11 (طُوّر واختُبر على ويندوز مع بايثون 3.12). لا توجد نسخة للجوال أو الماك.</div></details>
-    <details class="faq-item reveal"><summary><span data-i18n="q3">كيف أثبّت التطبيق؟</span></summary><div class="answer" data-i18n="a3">حمّل نسخة المثبّت Adhkar_Setup.exe وشغّلها واتبع المعالج، أو شغّل النسخة المحمولة Adhkar.exe مباشرة دون تثبيت.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q2">ما الأنظمة المدعومة؟</span></summary><div class="answer" data-i18n="a2">ويندوز 10 و11، وأندرويد 8 فأعلى. لا توجد نسخة للماك أو الآيفون.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q3">كيف أثبّت نسخة ويندوز؟</span></summary><div class="answer" data-i18n="a3">حمّل نسخة المثبّت Adhkar_Setup.exe وشغّلها واتبع المعالج، أو شغّل النسخة المحمولة Adhkar.exe مباشرة دون تثبيت.</div></details>
     <details class="faq-item reveal"><summary><span data-i18n="q4">هل يحتاج إلى الإنترنت؟</span></summary><div class="answer" data-i18n="a4">لا. المواقيت تُحسب محليًا على جهازك. الإنترنت يُستخدم فقط عندما تطلب ذلك: تحديد الموقع التلقائي أو البحث عن مدينة.</div></details>
     <details class="faq-item reveal"><summary><span data-i18n="q5">كيف أغيّر المدينة؟</span></summary><div class="answer" data-i18n="a5">من تبويب «مواقيت الصلاة والتنبيهات»: اختر الوضع اليدوي ثم ابحث عن مدينتك أو أدخل خط العرض وخط الطول واضغط اعتماد.</div></details>
     <details class="faq-item reveal"><summary><span data-i18n="q6">ماذا أفعل مع تحذير SmartScreen؟</span></summary><div class="answer" data-i18n="a6">الملف غير موقّع رقميًا لذلك قد يعرض ويندوز تحذيرًا. حمّل البرنامج من المصدر الرسمي فقط، وتأكد من اسم الملف وحجمه قبل التشغيل، ولا تتجاوز التحذير لملفات من مصادر مجهولة.</div></details>
     <details class="faq-item reveal"><summary><span data-i18n="q7">أين أجد التحديثات؟</span></summary><div class="answer" data-i18n="a7">من صفحة GitHub Releases الرسمية للمشروع — ستجد هناك أحدث إصدار وملاحظاته.</div></details>
+    <details class="faq-item reveal"><summary><span data-i18n="q8">كيف أثبّت نسخة أندرويد وأُبقي الكبسولة تعمل؟</span></summary><div class="answer" data-i18n="a8">حمّل ملف APK وثبّته (اسمح بالتثبيت من مصادر غير معروفة)، ثم امنح صلاحية «العرض فوق التطبيقات» عند تفعيل الكبسولة. وعلى أجهزة Honor وهواوي اسمح للتطبيق بالعمل في الخلفية من الإعدادات، وإلا قتل النظام الكبسولة خارج التطبيق.</div></details>
   </div>
 </section>
 </main>
@@ -207,7 +243,7 @@ try {
     <div class="foot-base">
       <span data-i18n="footTag">أذكار قصيرة ومواقيت دقيقة، بهدوء.</span>
       <span>v<span data-version>1</span> · MIT</span>
-      <span>© <span id="year">2026</span> <span data-i18n="rights">سامر شفيع. مرخّص بـ MIT.</span></span>
+      <span>© <span id="year">2026</span> <span data-i18n="rights">سامر سعيد شفيع. مرخّص بـ MIT.</span></span>
     </div>
   </div>
 </footer>
